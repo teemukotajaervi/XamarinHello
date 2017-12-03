@@ -18,7 +18,7 @@ namespace XamarinHello
             Random rnd = new Random();
             oikeaLuku = rnd.Next(1, 21);
 
-            // painonapin alustus
+            painonapin alustus
             Button arvaaNappi = new Button();
             arvaaNappi.Text = "Arvaa";
             arvaaNappi.Clicked += ArvaaNappi_Clicked;
@@ -31,37 +31,40 @@ namespace XamarinHello
             arvauksenTulosLabel = new Label();
             arvauksenTulosLabel.Text = "";
 
+            //esimerkki XAML-sivun käytöstä.
+            //MainPage = new EkaXamlSivu();
+
             MainPage = new ContentPage
             {
                 Content = new StackLayout
                 {
                     VerticalOptions = LayoutOptions.Center,
                     Children =
-                {
-                    new Label
-                    {
-                        HorizontalTextAlignment = TextAlignment.Center,
-                        Text = "Arvaa Numero - Peli",
-                        TextColor = Color.Blue,                     
-                    },
+                  {
                       new Label
-                    {
-                        HorizontalTextAlignment = TextAlignment.Center,
-                        Text = "Sovellusversio 0.10",
-                        TextColor = Color.Blue,                       
-                    },
-                      new Entry
                       {
-                          Keyboard = Keyboard.Numeric,
-                          Text = ""
+                          HorizontalTextAlignment = TextAlignment.Center,
+                          Text = "Arvaa Numero - Peli",
+                          TextColor = Color.Blue,
                       },
-                     syötekenttä,
-                     arvaaNappi,
-                     arvauksenTulosLabel
+                        new Label
+                      {
+                          HorizontalTextAlignment = TextAlignment.Center,
+                          Text = "Sovellusversio 0.10",
+                          TextColor = Color.Blue,
+                      },
+                        new Entry
+                        {
+                            Keyboard = Keyboard.Numeric,
+                            Text = ""
+                        },
+                       syötekenttä,
+                       arvaaNappi,
+                       arvauksenTulosLabel
+                  }
                 }
-             }
-          };
-       }
+            };
+        }
 
         private void ArvaaNappi_Clicked(object sender, EventArgs e)
         {
