@@ -21,9 +21,24 @@ namespace XamarinHello
                     new Label
                     {
                         HorizontalTextAlignment = TextAlignment.Center,
-                        Text = "Heissan Xamarin!!",
-                        TextColor = Color.Yellow
-                    }
+                        Text = "Arvaa Numero - Peli",
+                        TextColor = Color.Blue,                     
+                    },
+                      new Label
+                    {
+                        HorizontalTextAlignment = TextAlignment.Center,
+                        Text = "Sovellusversio 0.10",
+                        TextColor = Color.Blue,                       
+                    },
+                      new Entry
+                      {
+                          Keyboard = Keyboard.Numeric,
+                          Text = ""
+                      },
+                      new Button
+                      {
+                          Text = "Arvaa"
+                      }
                 }
              }
           };
