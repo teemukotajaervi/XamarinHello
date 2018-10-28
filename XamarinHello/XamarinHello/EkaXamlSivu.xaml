@@ -4,7 +4,7 @@
              x:Class="XamarinHello.EkaXamlSivu">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Teretulemast!"
+            <Label Text="Teretulemasti!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>
